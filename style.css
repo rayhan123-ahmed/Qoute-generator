@@ -4,7 +4,96 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #d9cebf;
+  background-size: cover;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #10161b;
+}
+.quote-container {
+  background: linear-gradient(145deg, #ccae68, #e1c27e); /* Subtle brass gradient */
+  border-radius: 18px; 
+  padding: 40px;
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  border-top: 5px solid #f4e1b3;
+  border-left: 5px solid #f4e1b3;
+  border-right: 5px solid #a38950;
+  border-bottom: 5px solid #a38950;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.quote-container {
+    position: relative;
+}
+.quote-container::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #00f0ff;
+    border-right: 4px solid #00f0ff;
+}
+.quote-container::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #00f0ff;
+    border-left: 4px solid #00f0ff;
+}
+.corner.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #00f0ff;
+    border-left: 4px solid #00f0ff;
+}
+.corner.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #00f0ff;
+    border-right: 4px solid #00f0ff;
+}
+h2{
+ color: #00cccc;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.quote-text{
+  color: #182c2a;
+  font-size: 22px;
+}
+.quote-author{
+  color: #534f35;
+}
+.generate-btn{
+   color: white;
+    background: linear-gradient(45deg, #00c6ff, #00f2c3);
+    border: none;
+    padding: 10px 25px;
+     border-radius: 25px;
+     font-weight: bold;
+     cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.4);
+}
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.6);
+}
+.generate-btn:active {
+    transform: scale(0.95);
+    
 }
